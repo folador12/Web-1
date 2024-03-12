@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Descrição da Página" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Luiz" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="viewport" width="device-width, initial-scale=1.0" />
+    <title>Exercício-8</title>
+  </head>
+
+  <body>
+    <form method="get"> 
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Insira seu nome"
+        />
+        <br />
+        <labell for="endereço">Endereço:</labell>
+        <input
+          type="text"
+          name="endereço"
+          id="endereço"
+          placeholder="Insira seu endereço"
+        />
+        <br />
+        <label for="cidade">Cidade:</label>
+        <input
+          type="text"
+          name="cidade"
+          id="cidade"
+          placeholder="Insira sua cidade"
+        />
+        <br />
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+          <option value="MG">Minas Gerais</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label for="cargo">Natureza do Cargo:</label>
+        <br />
+        <input type="radio" name="cargo" id="Gerência" />
+        <label for="Gerência">Gerência</label>
+        <input type="radio" name="cargo" id="Financeiro" />
+        <label for="Financeiro">Financeiro</label>
+        <input type="radio" name="cargo" id="Recepção" />
+        <label for="Recepção">Recepção</label>
+        <input type="radio" name="cargo" id="Administrativo" />
+        <label for="Administrativo">Administrativo</label>
+        <input type="radio" name="cargo" id="Jurídico" />
+        <label for="Jurídico">Jurídico</label>
+
+        <br />
+        <label for="interesse">Área de interesse:</label>
+        <br />
+        <input type="checkbox" name="interesse" id="Computação" />
+        <label for="Computação">Computação</label>
+        <input type="checkbox" name="interesse" id="Biologia" />
+        <label for="Biologia">Biologia</label>
+        <input type="checkbox" name="interesse" id="ambiente" />
+        <label for="ambiente">Meio Ambiente</label>
+        <input type="checkbox" name="interesse" id="Engenharia" />
+        <label for="Engenharia">Engenharia</label>
+        <input type="checkbox" name="interesse" id="História" />
+        <label for="História">História</label>
+
+        <br />
+        <label for="curriculo">Mini-Currículo:</label>
+        <br />
+        <textarea
+          name="curriculo"
+          id="curriculo"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+
+        <br />
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar">
+    </form>
+
+    <h1>2</h1>
+
+    <form>
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required/>
+            <br />
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="999.999.999-99" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" required/>
+            <br />
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento"/>
+            <br />
+            <label for="endereço" >Endereço:</label>
+            <input type="text" name="endereço" id="endereço" placeholder="Insira seu endereço" required/>
+            <br />
+            <label for = "sexo">Sexo:</label>
+            <input type="radio" name="sexo" id="masculino" value="masculino" required/>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" value="feminino" required/>
+            <label for="feminino">Feminino</label>
+
+            <br />
+            <label for = "tel">Telefone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="(34) 99239-0668" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" />
+            <br />
+
+            <label for="login">Login:</label>
+            <input type="text" name="login" id="login" placeholder="Insira seu login"/>
+            <br />
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="Insira sua senha"/>
+        </fieldset>
+        <br />
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar"/>
+    </form>
+  </body>
+</html>

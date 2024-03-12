@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Descrição da Página" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Luiz" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="viewport" width="device-width, initial-scale=1.0" />
+    <title>Exercício-7</title>
+  </head>
+
+  <body>
+    <main>
+      <form action="" method="get">
+        <h4>Campo de senha</h4>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Insira uma senha"
+        />
+        <h4>Campo para escolher cor</h4>
+        <input type="color" name="cor" id="cor" />
+
+        <h4>Campo para escolher data</h4>
+        <input type="date" name="data" id="data" />
+
+        <h4>Campo para escolher hora</h4>
+        <input type="time" name="hora" id="hora" />
+
+        <h4>Campo para escolher data e hora</h4>
+        <input type="datetime-local" name="datahora" id="datahora" />
+
+        <h4>Campo para escolher mês</h4>
+        <input type="month" name="mes" id="mes" />
+
+        <h4>Campo para escolher a semana</h4>
+        <input type="week" name="semana" id="semana" />
+
+        <h4>Campo para receber endereço de e-mail</h4>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Insira seu e-mail"
+        />
+
+        <h4>Imagem como botão de submissão</h4>
+        <input type="image" src="../_Midias/IBM.gif" alt="Submit" />
+
+        <h4>Campo para enviar um unico arquivo DOC</h4>
+        <input type="file" name="arquivo" id="arquivo" accept=".doc" />
+
+        <h4>Campo para enviar vários arquivos PDF ou de imagens</h4>
+        <input type="file" name="arquivos" id="arquivos" multiple accept=".pdf,.png,.jpg" />
+
+        <h4>
+          Campo de entrada escondido - neste exemplo o valor é igual a 321
+        </h4>
+        <input type="hidden" name="escondido" id="escondido" value="321" />
+
+        <h4>Campo para receber números inteiros</h4>
+        <input type="number" name="numero" id="numero" />
+
+        <h4>Campo para receber numeros inteiros de 0 a 10</h4>
+        <input
+          type="number"
+          name="numeroLimitado"
+          id="numeroLimitado"
+          min="0"
+          max="10"
+        />
+
+        <h4>Campo para receber números com casas decimais</h4>
+        <input type="number" name="decimais" id="decimais" step="0.1" />
+
+        <h4>Campo de faixa de valores de 0 a 10 com saltos de 2 a 2</h4>
+        <input type="range" name="faixa" id="faixa" min="0" max="10" step="2" />
+
+        <h4>Campo de pesquisa</h4>
+        <input
+          type="search"
+          name="pesquisa"
+          id="pesquisa"
+          placeholder="Pesquise aqui"
+        />
+
+        <h4>Campo para entrada de numero de telefone</h4>
+        <input
+          type="tel"
+          name="telefone"
+          id="telefone"
+          placeholder="(34) 99239-0668"
+        />
+
+        <h4>Campo para entrada de URL</h4>
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="https://www.google.com"
+        />
+
+        <h4>Botão Submit com imagem</h4>
+
+        <button>
+          enviar
+          <img src="../_Midias/IBM.gif" alt="Submit" />
+        </button>
+
+        <h4>Lista de opções com agrupamento</h4>
+
+        <select name="opcoes" id="opcoes">
+          <optgroup label="Região Sudeste">
+            <option value="1">Minas Gerais</option>
+            <option value="2">São Paulo</option>
+          </optgroup>
+        </select>
+
+        <br />
+
+        <button>Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
