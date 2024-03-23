@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevisãoP1</title>
+</head>
+<body>
+    <div>
+        <H2>Formatação</H2>
+        Lorem ipsum dolor sit, amet <strong>Destaque Negrito</strong> adipisicing elit. Saepe quibusdam obcaecati magnam facere deserunt veniam in tempora corporis. Vel porro quas 
+        deserunt architecto neque, dignissimos adipisci accusantium explicabo ad iure.
+    
+        <p>Etapa 1 &rarr; Etapa 2 &rarr; Fim</p>
+
+        <p>2<sup>8</sup> = 256</p>
+
+        <p><del>Esse texto está errado</del> <ins>Esse texto está certo</ins></p>
+        <hr>
+    </div>
+
+    <div>
+        <h1>Lista</h1> 
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ul>
+                    <li>Subitem 1</li>
+                    <li>Subitem 2</li>
+                </ul>
+                <li>Item 3</li>
+            </ol>
+    </div>
+
+    <div>
+        <h1>Tabela</h1>
+
+        <table border="1">
+            <thead>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+            </thead>
+            <tbody>
+              <tr>
+                <th>X</th>  
+                <th colspan="2" rowspan="2">X</th>
+                <th>X</th>
+              </tr>
+              <tr>
+                <th>X</th>
+                <th>X</th>
+              </tr>
+              <tr>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+                <th>X</th>
+              </tr>
+            </tbody>
+        </table>
+        <br>
+        <table border="1">
+            <caption>Contatos</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>3333-3333</td>
+                </tr>
+                <tr>
+                    <td>Mário</td>
+                    <td>3333-1234</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Dados</legend>
+                <label>Nome: <input type="text"></label><br>
+                <label>Endereço: <input type="text"></label><br>
+                <label>Cidade <input type="text"></label><br>
+                <label>Sexo  
+                    <select>                
+                        <optgroup label="Sexo">
+                            <option value="">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                        </optgroup>
+                    </select>
+                </label><br>
+                <label for = "ts">Tipo Sanguíneo</label><br>
+                <input type="radio" name="ts" id="A">
+                <label for="A">A</label>
+                <input type="radio" name="ts" id="B">
+                <label for="B">B</label>
+                <input type="radio" name="ts" id="C">
+                <label for="C">C</label>
+                <input type="radio" name="ts" id="D">
+                <label for="D">D</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="Reset" value="Limpar">
+        </form>
+    </div>
+    <h1>Multimídia e incorporações</h1>
+    <div>
+        <iframe src="http:\\www.iftm.edu.br" frameborder="5" width="400" height="400"></iframe>
+    </div>
+    <br>
+    <video width="320" height="240" controls autoplay muted>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.webm" type="video/webm">
+        Seu navegador não suporta o elemento vídeo.
+    </video>
+    <br><br>    
+    <audio controls autoplay>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento audio.
+    </audio>
+    <br><br>
+    <div>
+        <iframe width="360" height="175" src="https://www.youtube.com/embed/23IoWE3xwhI?si=y1jGaGXxppyG5d_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    </body>
+</html>
