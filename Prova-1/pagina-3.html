@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content=Luiz">
+    <meta http-equiv="refresh" content="30" />
+    <meta name="viewport" width="device-width, initial-scale=1.0" />
+    <title>Pagina 3</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Prova - Página 3</h1>
+    </header>
+
+    <section>
+      <h2>Formulário</h2>
+
+      <form method="get">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" required />
+          <br />
+          <label for="tel">Telefone:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="(34)1234-5678"
+            pattern="\([0-9]\){2}[0-9]{4}-[0-9]{4}"
+            required
+          />
+          <br />
+          <label for="banco">Banco</label>
+          <br />
+          <input type="radio" name="banco" id="Caixa" value="Caixa" />
+          <label for="Caixa">Caixa</label>
+          <input
+            type="radio"
+            name="banco"
+            id="Banco do Brasil"
+            value="Brasil"
+          />
+          <label for="Banco do Brasil">Banco do Brasil</label>
+          <input type="radio" name="banco" id="Itaú" value="Itaú" />
+          <label for="Itaú">Itaú</label>
+          <input type="radio" name="banco" id="Bradesco" value="Bradesco" />
+          <label for="Bradesco">Bradesco</label>
+          <br />
+          <label for="color">Cor</label>
+          <input type="color" id="color" name="color"/>
+        </fieldset>
+        <br />
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+      <br />
+      <a href="index.html">Voltar para página principal</a>
+    </section>
+  </body>
+</html>

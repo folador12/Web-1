@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Exercício 2" />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="author" content=Luiz">
+    <meta http-equiv="refresh" content="30" />
+    <meta name="viewport" width="device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício 2</title>
+  </head>
+  <body>
+    <h3>Jogo da Velha</h3>
+    <table>
+      <tr>
+        <td class="velha">X</td>
+        <td>O</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td>O</td>
+        <td class="velha">X</td>
+        <td>O</td>
+      </tr>
+      <tr>
+        <td>X</td>
+        <td>O</td>
+        <td class="velha">X</td>
+      </tr>
+    </table>
+
+    <h3>Posições</h3>
+    <div class="externa">
+      Ilusão de ótica quadrada
+      <div class="interna">
+        Ilusão de ótica quadrada
+        <div class="interna">
+          Ilusão de ótica quadrada
+          <div class="interna">Ilusão de ótica quadrada</div>
+        </div>
+      </div>
+    </div>
+    <h3>Formulário</h3>
+    <form method="get" action="#">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Insira seu nome"
+        />
+
+        <label for="data">Data de Nascimento</label>
+        <input type="date" name="data" id="data" />
+
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="telefone">Telefone:</label>
+        <input
+          type="tel"
+          name="telefone"
+          id="telefone"
+          placeholder="Insira seu telefone"
+          pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+        />
+
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Insira sua senha"
+        />
+        <label for="tipo-sanguineo">Tipo sanguíneo</label>
+
+        <input type="radio" name="tipo-sanguineo" id="A" value="A" />
+        <label for="A">A</label>
+        <input type="radio" name="tipo-sanguineo" id="B" value="B" />
+        <label for="B">B</label>
+        <input type="radio" name="tipo-sanguineo" id="AB" value="AB" />
+        <label for="AB">AB</label>
+        <input type="radio" name="tipo-sanguineo" id="O" value="O" />
+        <label for="O">O</label>
+
+        <label for="interesse">Área de interesse</label>
+        <input type="checkbox" name="interesse" id="bio" value="bio" />
+        <label for="bio">Biologia</label>
+        <input type="checkbox" name="interesse" id="eng" value="eng" />
+        <label for="eng">Engenharia</label>
+        <input type="checkbox" name="interesse" id="his" value="his" />
+        <label for="his">História</label>
+
+        <label for="observations">Observações:</label>
+        <textarea name="observations" id="observations"></textarea>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </fieldset>
+    </form>
+
+    <h3>Barra de Navegação</h3>
+    <ul>
+      <li><a href="#">LinkFake01</a></li>
+      <li><a href="#">LinkFake02</a></li>
+      <li><a href="#">LinkFake03</a></li>
+      <li><a href="#">LinkFake04</a></li>
+    </ul>
+
+    <h3>Layout</h3>
+    <p>Vai para a página do Layout: <a href="layout.html">Layout</a></p>
+  </body>
+</html>

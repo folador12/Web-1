@@ -1,0 +1,70 @@
+h2 {
+  color: blue;
+  font-size: 25px;
+  font-family: Arial;
+}
+
+ul {
+  list-style-image: url("../../_Midias/casa.png");
+}
+
+caption {
+  font-weight: bold;
+  color: red;
+}
+
+table,
+th,
+td {
+  border: 2px black solid;
+  border-collapse: collapse;
+  width: 25%;
+}
+
+thead {
+  background-color: green;
+  text-align: center;
+}
+
+th {
+  color: white;
+}
+
+.total {
+  background-color: lightgray;
+}
+
+tr:nth-last-child(even) {
+  background-color: antiquewhite;
+}
+
+.link {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  background-color: aqua;
+  color: black;
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial;
+  color: blue;
+  border: 2px black solid;
+  max-width: 300px;
+  border-radius: 6px;
+  padding: 10px;
+}
