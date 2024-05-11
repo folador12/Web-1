@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 1</title>
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div>
+      <form method="get">
+        <label for="n1">N1:</label>
+        <input type="number" name="n1" id="n1" />
+        <label for="n2">N2:</label>
+        <input type="number" name="n2" id="n2" />
+        <label for="text">Texto:</label>
+        <input type="text" name="text" id="text" />
+      </form>
+    </div>
+
+    <p>
+      Cálculos: <button onclick="somar()">Soma</button>
+      <button onclick="subtrair()">Subtração</button>
+      <button onclick="multiplicar()">Multiplicação</button>
+      <button onclick="dividir()">Divisão</button>
+      <button onclick="somarIntervalos()">Soma os numeros do Intervalo</button>
+      <button onclick="fatorialN1()">Calcula o fatorial N1</button>
+    </p>
+    <p>
+      Lista de intervalo:
+      <button onclick="listarIntervalos() ">Todos os números de N1 a N2</button>
+      <button onclick="listarPares()">Pares de N1 a N2</button>
+      <button onclick="listarMultiplosDe5()">
+        Múltiplos de cinco de N1 a N2
+      </button>
+    </p>
+    <p>
+      Texto:
+      <button onclick="verficarTexto()">
+        Mostre o nome num alert se o mesmo tiver menos que 10 caracteres. Caso
+        contrário avise sobre o erro.
+      </button>
+    </p>
+
+    <p id="resultado"></p>
+  </body>
+</html>
