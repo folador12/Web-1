@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: yellowgreen;
+            height: 150px;
+        }
+
+        .flex-container>div {
+            background-color: gray;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        .AlteraDiv3 {
+            order: -1;
+            flex-grow: 1;
+            flex-basis: 50px;
+            align-self: flex-start;
+        }
+
+        .AlteraDiv1 {
+            flex-grow: 2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="AlteraDiv1">1</div>
+        <div>2</div>
+        <div class="AlteraDiv3">3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            background-color: yellow;
+            border: 1px solid red;
+        }
+
+        #grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 20vh 60vh 20vh;
+            grid-template-areas:
+                'cabecalho cabecalho cabecalho'
+                'menu1 secao aside'
+                'menu1 rodape rodape';
+        }
+
+        #grid-container > div{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+        #div01 {
+            grid-area: cabecalho;
+        }
+
+        #div02 {
+            grid-area: menu1;
+        }
+
+        #div03 {
+            grid-area: secao;
+        }
+
+        #div04 {
+            grid-area: aside;
+        }
+
+        #div05 {
+            grid-area: rodape;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid-container">
+        <div id="div01">
+            Cabeçalho
+        </div>
+        <div id="div02">
+            Menu
+        </div>
+        <div id="div03">
+            Seção
+        </div>
+        <div id="div04">
+            Aside
+        </div>
+        <div id="div05">
+            Rodapé
+        </div>
+    </div>
+</body>
+
+</html>

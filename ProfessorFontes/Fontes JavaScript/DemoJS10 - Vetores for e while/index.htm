@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            var carros = ["BMW", "Volvo", "Saab", "Ford"];
+            var i = 0;
+            var text = "";
+
+            while (carros[i]) {
+                text += carros[i] + "<br>";
+                i++;
+            }
+            document.getElementById("id01").innerHTML = text;
+
+            text = "2" + "<br>";
+            for (let i = 0; i < carros.length; i++) {
+                text += carros[i] + "<br>";
+            }
+            document.getElementById("id02").innerHTML = text;
+        }
+    </script>
+    <h1 id="id01"></h1>
+    <h2 id="id02"></h2>
+</body>
+
+</html>

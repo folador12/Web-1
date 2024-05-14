@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            let valor;
+            valor = prompt("Digite um valor:");
+            
+            document.getElementById("id01").innerHTML =
+                "ParseInt: " + parseInt(valor) + "<br>" +
+                "ParseFloat: " + parseFloat(valor) + "<br>" +
+                "String: " + String(valor);
+        }
+    </script>
+    <h1 id="id01"></h1>
+</body>
+
+</html>

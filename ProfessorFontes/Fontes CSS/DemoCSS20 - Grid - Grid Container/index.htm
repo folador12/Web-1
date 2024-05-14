@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: 70px 140px auto 70px; */
+            /* grid-template-rows: 100px 200px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-rows: 1fr 2fr; */
+            /* column-gap: 10px; */
+            /* row-gap: 5px; */
+            /* gap: 10px 5px; */
+            gap: 0px;
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            justify-content: stretch;
+            height: 150px;
+            /* align-content: center; */
+            /* align-content: space-evenly; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: start; */
+            /* align-content: end; */
+            align-content: stretch;
+        }
+
+        .grid-container {
+            background-color: yellowgreen;
+        }
+
+        .grid-container>div {
+            background-color: gray;
+            border: 1px solid red;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            let day = "";
+            switch (new Date().getDay()) {
+                case 0:
+                    day = "Domingo";
+                    break;
+                case 1:
+                    day = "Segunda";
+                    break;
+                case 2:
+                    day = "Terça";
+                    break;
+                case 3:
+                    day = "Quarta";
+                    break;
+                case 4:
+                    day = "Quinta";
+                    break;
+                case 5:
+                    day = "Sexta";
+                    break;
+                case 6:
+                    day = "Sábado";
+            }
+            document.getElementById("id01").innerHTML = day;
+        }
+    </script>
+    <h1 id="id01"></h1>
+</body>
+
+</html>

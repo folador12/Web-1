@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            const d1 = new Date();                                      //data e hora atuais
+            const d2 = new Date(2018, 11, 24, 10, 33);       // ano, mês, dia, hora e minuto
+            const d3 = new Date(2018, 11, 24);                  // ano, mês e dia
+
+            document.getElementById("id01").innerHTML =
+                d1.toString() + "<br>" + 
+                d1.toUTCString() + "<br>" +
+                d1.toDateString() + "<br>" +
+                d1.getFullYear() + "<br>" +
+                d1.getMonth() + "<br>" +
+                "Novo número após mudar para o ano de 1980: " + d1.setFullYear(1980) + "<br>" +
+                d1.toLocaleDateString() + "<br>";
+                }
+    </script>
+    <h1 id="id01"></h1>
+</body>
+
+</html>

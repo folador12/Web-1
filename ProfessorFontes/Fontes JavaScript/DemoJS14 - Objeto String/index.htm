@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            var resultado = "";
+            var txt = "ABCD";
+            var tam = txt.length;
+            resultado = tam + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            txt = "Melância, Abacate, Ameixa";
+            var res = txt.slice(4, 8);
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            res = txt.substr(4, 8);
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            txt = "Visite o CEFET em Uberaba";
+            res = txt.replace("CEFET", "IFTM");
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            var txt1 = "Olá";
+            var txt2 = "Mundo";
+            res = txt1.concat(" ", txt2);
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            txt = "      Olá Pessoal      ";
+            res = txt.trim();
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            txt = "Como vai você?";
+            res = txt.split(" ");
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            txt = "Vamos pensar mais, mais alegremente!";
+            res = txt.indexOf("mais");
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            res = txt.lastIndexOf("mais");
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            txt = "Como vai você?";
+            res = txt.startsWith("Como");
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            res = txt.endsWith("?");
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            res = txt.toUpperCase();
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            res = txt.toLowerCase();
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+
+            res = txt.charAt(5);
+            resultado += res + "<br>";
+            document.getElementById("id01").innerHTML = resultado;
+        }
+    </script>
+    <h1 id="id01"></h1>
+</body>
+
+</html>

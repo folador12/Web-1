@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            document.getElementById("id01").innerHTML =
+                Math.round(14.55) + "<br>" +
+                Math.trunc(14.55) + "<br>" +
+                Math.pow(2, 3) + "<br>" +
+                Math.sqrt(81) + "<br>" +
+                Math.abs(-15.15) + "<br>" +
+                Math.min(2,4,6,8,10) + "<br>" +
+                Math.max(2,4,6,8,10) + "<br>" +
+                Math.random();
+        }
+    </script>
+    <h1 id="id01"></h1>
+</body>
+
+</html>

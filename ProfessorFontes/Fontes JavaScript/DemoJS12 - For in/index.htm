@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <script>
+        window.onload = funcao01;
+        function funcao01() {
+            const pessoa = {
+                nome: "Pedro",
+                idade: 25
+            };
+            let text = "";
+
+            for (let x in pessoa) {
+                text += pessoa[x] + "<br>";
+            }
+            document.getElementById("id01").innerHTML = text;
+        }
+    </script>
+    <h1 id="id01"></h1>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button onclick="testeVar()">Teste var</button>
+    <button onclick="testeLet()">Teste let</button>
+    <script>
+        var aaavarGlobal = 1; 
+        function testeVar() {
+            if (true) {
+                var x = 5;
+            }
+            alert(x);
+            alert(aaavarGlobal);
+        }
+        function testeLet() {
+            if (true) {
+                let x = 5;
+                alert(x);
+            }
+            alert(aaavarGlobal);
+            alert(x);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+<script>
+    window.onload = funcao01;
+    function funcao01() {
+        const numeros = [10, 30, 50];
+        let soma = 0;
+
+        numeros.forEach(funcao);
+
+        function funcao(value) {
+            soma += value;
+        }
+        document.getElementById("id01").innerHTML = soma;
+    }
+</script>
+<h1 id="id01"></h1>
+</body>
+
+</html>
