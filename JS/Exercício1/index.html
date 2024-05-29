@@ -20,18 +20,22 @@
     </div>
 
     <p>
-      Cálculos: <button onclick="somar()">Soma</button>
-      <button onclick="subtrair()">Subtração</button>
-      <button onclick="multiplicar()">Multiplicação</button>
-      <button onclick="dividir()">Divisão</button>
-      <button onclick="somarIntervalos()">Soma os numeros do Intervalo</button>
-      <button onclick="fatorialN1()">Calcula o fatorial N1</button>
+      Cálculos: <button onclick="calcular('soma')">Soma</button>
+      <button onclick="calcular('subtracao')">Subtração</button>
+      <button onclick="calcular('multiplicacao')">Multiplicação</button>
+      <button onclick="calcular('divisao')">Divisão</button>
+      <button onclick="calcular('intervalo')">
+        Soma os numeros do Intervalo
+      </button>
+      <button onclick="calcular('fatorial')">Calcula o fatorial N1</button>
     </p>
     <p>
       Lista de intervalo:
-      <button onclick="listarIntervalos() ">Todos os números de N1 a N2</button>
-      <button onclick="listarPares()">Pares de N1 a N2</button>
-      <button onclick="listarMultiplosDe5()">
+      <button onclick="listar('intervalo') ">
+        Todos os números de N1 a N2
+      </button>
+      <button onclick="llistar('par')">Pares de N1 a N2</button>
+      <button onclick="listar('multiplo5')">
         Múltiplos de cinco de N1 a N2
       </button>
     </p>

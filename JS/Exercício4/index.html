@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Exercício 4</title>
+  </head>
+  <body>
+    <h1 id="titulo1"></h1>
+
+    <div class="minha-div"></div>
+
+    <div class="minha-div"></div>
+
+    <div class="minha-div"></div>
+
+    <br /><br />
+    <img src="" />
+
+    <br /><br />
+
+    <p id="texto-1">Eu sou um parágrafo.</p>
+    <a id="link-1">Eu sou um link.</a>
+
+    <br /><br />
+
+    <div
+      class="cores"
+      onmouseover="addRed(this)"
+      onmouseout="addWhite(this)"
+    ></div>
+    <div class="cores" onclick="trocaCor(this)"></div>
+
+    <br /><br />
+
+    <button onclick="criaQuadrado()">Criar quadrado</button>
+    <div id="quadrados"></div>
+
+    <br /><br />
+
+    <div>
+      <textarea
+        style="box-shadow: 0; outline: 0"
+        onkeyup="contaLetras(this)"
+        cols="100"
+        rows="5"
+        onfocus="mudaBorda(this, 'red')"
+        onblur="mudaBorda(this,'gray')"
+      ></textarea>
+      <span>0 caracter</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

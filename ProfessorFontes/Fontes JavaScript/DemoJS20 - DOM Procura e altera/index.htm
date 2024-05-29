@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button id="botao" onclick="acao()">Ação</button>
+    <div id="id01">
+        <h1>H1 da Div 01</h1>
+        <p class="classe01">Parágrafo 01 da div 01.</p>
+        <p class="classe02">Parágrafo 02 da div 01.</p>
+    </div>
+
+    <div id="id02">
+        <h1>H1 da Div 02</h1>
+        <p class="classe01">Parágrafo 01 da div 02.</p>
+        <p class="classe02">Parágrafo 02 da div 02.</p>
+    </div>
+    <h2 id="id03">H2 sem div.</h2>
+    <img id="imagem" alt="praia" src="praia.jpg" width="200" height="150">
+
+    <script>
+        function acao() {
+            const x = document.getElementById("id02");
+            const y = x.getElementsByTagName("p");
+            document.getElementById("id03").innerHTML = "H2 sem div. ==>  Busquei o " + y[1].innerHTML;
+
+            const p = document.getElementsByTagName("p");
+            for (const x of p) {
+                x.style.color = "red";
+            }
+
+            // Usando loop normal
+            for (let i = 0; i < p.length; i++) {
+                p[i].style.color = "red";
+            }
+            // Usando conversão para forEach
+            Array.from(p).forEach(element => {
+                element.style.color = "red";
+            });
+
+            const c = document.getElementsByClassName("classe01");
+            for (const x of c) {
+                x.style.backgroundColor = "aqua";
+            }
+            // Usando loop normal
+            for (let i = 0; i < c.length; i++) {
+                c[i].style.backgroundColor = "aqua";
+            }
+            // Usando conversão para forEach
+            Array.from(c).forEach(element => {
+                element.style.backgroundColor = "aqua";
+            });
+            document.querySelector(".classe02").style.fontStyle = "italic";
+
+            const var1 = document.querySelectorAll(".classe02");
+            for (const x of var1) {
+                x.style.fontWeight = "bold";
+            }
+
+            // Usando loop normal
+            for (let i = 0; i < var1.length; i++) {
+                var1[i].style.fontWeight = "bold";
+            }
+            // Usando conversão para forEach
+            Array.from(var1).forEach(element => {
+                element.style.fontWeight = "bolder";
+            });
+
+            document.getElementById("imagem").width = 100;
+            document.getElementById("imagem").setAttribute("height", 75);
+
+        }
+    </script>
+</body>
+
+</html>

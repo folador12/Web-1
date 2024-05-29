@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1 id="id01">Título</h1>
+    <ul id="compras">
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <hr>
+    <h2>Sequência de acesso: UL - 1o filho - próximo irmão - irmão anterior - pai - último filho</h2>
+    <p id="id02"></p>
+
+    <script>
+        // Sequência de acesso: UL - 1o filho - próximo irmão - irmão anterior - pai - último filho
+        let texto = "";
+        let elementoAtual = document.getElementById("compras");
+        texto = elementoAtual.nodeName + "<br>";
+        elementoAtual = elementoAtual.firstElementChild;
+        texto += elementoAtual.innerHTML + "<br>";
+        elementoAtual = elementoAtual.nextElementSibling;
+        texto += elementoAtual.innerHTML + "<br>";
+        elementoAtual = elementoAtual.previousElementSibling;
+        texto += elementoAtual.innerHTML + "<br>";
+        elementoAtual = elementoAtual.parentElement;
+        texto += elementoAtual.nodeName + "<br>";
+        elementoAtual = elementoAtual.lastElementChild;
+        texto += elementoAtual.innerHTML + "<br>";
+        document.getElementById("id02").innerHTML = texto;
+    </script>
+</body>
+
+</html>

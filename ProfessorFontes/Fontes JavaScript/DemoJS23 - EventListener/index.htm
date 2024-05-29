@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button id="botao1" onclick="funcao05()">Tente</button>
+    <button id="botao2" onclick="funcaoRemove()">Remove</button>
+    <p id="demo"></p>
+
+    <script>
+        var x = document.getElementById("botao1");
+        x.addEventListener("mouseover", funcao01);
+        x.addEventListener("click", funcao02);
+        x.addEventListener("mouseout", funcao03);
+
+        let p1 = 5;
+        let p2 = 7;
+        x.addEventListener("click", function () { calculo(p1, p2) }); // usando função anônima para passar parâmetros.
+
+        function funcao01() {
+            document.getElementById("demo").innerHTML += "Passei o mouse sobre!<br>";
+        }
+
+        function funcao02() {
+            document.getElementById("demo").innerHTML += "Cliquei função 02!<br>";
+        }
+
+        function funcao03() {
+            document.getElementById("demo").innerHTML += "Retirei o mouse!<br>";
+        }
+
+        function calculo(a, b) {
+            document.getElementById("demo").innerHTML += a * b + "<br>";
+        }
+
+        function funcao05() {
+            document.getElementById("demo").innerHTML += "Cliquei função 05!<br>";
+        }
+
+        function funcaoRemove() {
+            x.removeEventListener("click", funcao02);
+            x.removeEventListener("click", function () { calculo(p1, p2) }); // Não retira função anônima
+            x.removeEventListener("click", funcao05); // Não retira, pois foi definida no onclick
+        }
+    </script>
+</body>
+
+</html>

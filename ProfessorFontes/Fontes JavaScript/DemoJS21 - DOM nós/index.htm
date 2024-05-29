@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button id="botao" onclick="acao()">Ação</button>
+    <button id="botao" onclick="remove()">Remove P1</button>
+    <button id="botao" onclick="substitui()">Substitui P2</button>
+    <div id="div1">
+        <p id="p1">Parágrafo 01.</p>
+        <p id="p2">Parágrafo 02.</p>
+    </div>
+
+    <script>
+        function acao() {
+            const para = document.createElement("p");
+            const node = document.createTextNode("Novo parágrafo.");
+            para.appendChild(node);
+            const element = document.getElementById("div1");
+            element.appendChild(para);
+        }
+
+        function remove() {
+            const filho = document.getElementById("p1");
+            filho.parentNode.removeChild(filho);
+        }
+
+        function substitui() {
+            const para = document.createElement("p");
+            const node = document.createTextNode("Substituindo o parágrafo 02.");
+            para.appendChild(node);
+
+            const filho = document.getElementById("p2");
+            filho.parentNode.replaceChild(para, filho);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 5</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <h1>Exercício 1</h1>
+
+    <form action="#" method="get" name="form1" onsubmit="return validaForm1()">
+      <label for="name">Nome:</label>
+      <input type="text" name="name" /> <br />
+      <label for="cpf">CPF:</label>
+      <input type="number" name="cpf" /> <br />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Exercício 2</h2>
+
+    <div>
+      <input type="text" id="contador" onkeyup="contagem()" />
+      <span id="numero"></span>
+    </div>
+
+    <h3>Exercício 3</h3>
+    <div>
+      <input type="text" id="texto" /> <button onclick="gerar()">Gerar</button>
+      <div class="resultado"></div>
+    </div>
+
+    <h4>Exercício 4</h4>
+    <form action="#" method="get" name="form2" onsubmit="return validaForm2()">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" /> <br />
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" name="nascimento" /> <br />
+      <label for="filhos">Qtde filhos:</label>
+      <input type="number" name="filhos" /> <br />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
